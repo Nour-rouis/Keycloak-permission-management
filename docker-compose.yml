@@ -11,7 +11,7 @@ services:
       - "start-dev"
 backend:
   build:
-    context: C:\Users\nourr\Desktop\NuitDinfo\keycloak-integration-with-spring-boot-3  
+    context: .\keycloak-integration-with-spring-boot-3  
   ports:
     - "8081:8081"
   depends_on:
@@ -19,7 +19,7 @@ backend:
 
 frontend:
   build:
-    context: C:\Users\nourr\Desktop\FrontNuitDinfo\InfoNight
+    context: .\InfoNight
   ports:
     - "3000:3000"
   depends_on:
